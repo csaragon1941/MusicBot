@@ -1,9 +1,13 @@
 # MusicBot - v3.0
-This a Discord Music Bot made to accept multiple commands that pertain to playing music within Discord. Commands included in this program are:
+This a Discord Music Bot made to accept multiple commands that pertain to playing music within Discord. Some commands included in this program are:
 * /play
 * /playnext
+* /stop
+* /skip
+* /loop
+* /back
 * /queue
-* / TBD 
+...
 
 
 ## Description
@@ -19,8 +23,19 @@ This is the third iteration of the Discord Music Bot made using Visual Studio Co
 * ms
 * opusscript
 
-## Configuration - config.js
-Make sure you include  put your guid_id (found within server settings) and the bot token (from the discord developers website)
+```
+//Intalling Packages in the Terminal
+
+npm i node.js
+npm i discord.js
+npm i discord-player
+npm i ms
+npm i opusscript
+```
+
+
+### Configuration - config.js
+Make sure you include  put your **guid_id** *(found within server settings)* and the bot **token** *(from the discord developers website)*
 
 ```
 module.exports = {
@@ -55,52 +70,43 @@ module.exports = {
 
 ### Executing program
 
-* In the terminal 
-```
+To get the Bot online, after the token, guild_id , and packages are installed, type ***node main.js*** in the terminal to turn the bot online. Once the bot is online, go into Discord to check the status of the Bot. If the Bot is online, you are able to enter slash commands into the Discord server. Have fun!
+
 
 ## Help
 
-Any advise for common problems or issues.
 ```
-command to run if program contains helper info
-```
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+  
+  // Make sure that you are in the file directory within the terminal
+        Ex. cd discord-bot-terminal
+```  
+ 
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Christina Aragon
+[csaragon1941](https://github.com/csaragon1941)
 
 ## Version History
 
-* 0.2
+* 3.0
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
+    * Imports of commands
+* 2.0
+    * Various bug fixes and optimizations
+    * Imports of Basic functions
+* 1.0
     * Initial Release
+    * Server connectivity test code
 
-## License
+## Discord Development
 
-**License:**  
-MIT License
+Go to the ***OAuth2 URL Generator*** -> Within ***Scopes*** Select: ***bot , applications.command*** -> Within ***Bot Permissions*** Select: ***Administrator***
 
-Copyright (c) [2022] [Christina Aragon, ]
+Go to the ***"Bot"*** Section and turn on ***Presence Intent , Server Members Intent , Message Content Intent***
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**P.S If you want to add the bot to a different server, you must kick the bot out of its initial server and must repeat the processes up above. After, Re-Run the code**
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
