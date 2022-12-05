@@ -12,7 +12,8 @@ This a Discord Music Bot made to accept multiple commands that pertain to playin
 
 ## Description
 
-This is the third iteration of the Discord Music Bot made using Visual Studio Code on MacOS(Intel Core i5) with the language JavaScript. This Bot
+This is the third iteration of the Discord Music Bot made using Visual Studio Code on MacOS(Intel Core i5) with the language JavaScript. This Bot has mutilple basic commands so any Discord user can play music within the app!
+
 ## Getting Started
 
 ### Dependencies
