@@ -86,16 +86,10 @@ node:internal/modules/cjs/loader:998
 ```  
  
 
-## Authors
+## Author
 
 Christina Aragon
 [csaragon1941](https://github.com/csaragon1941)
-
-Blake Smith
-[bjsmith21](https://github.com/bjsmith21)
-
-Rose Meyers
-[RoseMeyers](https://github.com/RoseMeyers)
 
 ## Version History
 
